@@ -21,8 +21,9 @@
 #include <iostream>
 #include "../classes/Keyboard.h"
 
-namespace utils {
-	
+namespace utils
+{
+
 	std::string getCmdName(std::string cmd);
 
 	bool parseStartupMode(std::string val, LedKeyboard::StartupMode &startupMode);
@@ -35,7 +36,7 @@ namespace utils {
 	bool parsePeriod(std::string val, std::chrono::duration<uint16_t, std::milli> &period);
 	bool parseUInt8(std::string val, uint8_t &uint8);
 	bool parseUInt16(std::string val, uint16_t &uint16);
-	
+
 }
 
 #endif
